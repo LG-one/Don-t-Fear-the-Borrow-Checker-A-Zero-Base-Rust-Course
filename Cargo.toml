@@ -1,0 +1,76 @@
+[package]
+name = "rust_course_v2"
+version = "0.3.0"
+edition = "2021"
+description = "Rust 基础课程 v3.0 - 15课完整教学课件 + async/await 课外资料"
+
+[dependencies]
+tokio = { version = "1", features = ["full"], optional = true }
+
+[features]
+async_support = ["tokio"]
+
+[[example]]
+name = "lesson00"
+path = "00_环境与第一个程序.rs"
+
+[[example]]
+name = "lesson01"
+path = "01_变量与数据类型.rs"
+
+[[example]]
+name = "lesson02"
+path = "02_控制流与函数.rs"
+
+[[example]]
+name = "lesson03"
+path = "03_所有权系统.rs"
+
+[[example]]
+name = "lesson04"
+path = "04_结构体与方法.rs"
+
+[[example]]
+name = "lesson05"
+path = "05_生命周期.rs"
+
+[[example]]
+name = "lesson06"
+path = "06_枚举与模式匹配.rs"
+
+[[example]]
+name = "lesson07"
+path = "07_错误处理.rs"
+
+[[example]]
+name = "lesson08"
+path = "08_泛型与Trait.rs"
+
+[[example]]
+name = "lesson09"
+path = "09_集合类型.rs"
+
+[[example]]
+name = "lesson10"
+path = "10_迭代器与闭包.rs"
+
+[[example]]
+name = "lesson11"
+path = "11_模块系统.rs"
+
+[[example]]
+name = "lesson12"
+path = "12_并发编程.rs"
+
+[[example]]
+name = "lesson13"
+path = "13_Cargo项目管理.rs"
+
+[[example]]
+name = "lesson14"
+path = "14_综合实战_命令行记事本.rs"
+
+[[example]]
+name = "lesson_async"
+path = "课外资料_async_await.rs"
+required-features = ["async_support"]
