@@ -1,5 +1,7 @@
 # 🦀 Rust 基础课程 v3.0
 
+<h3 align="center"><a href="README.md">中文</a> | <a href="README_en.md">English</a></h3>
+
 > 从 "Hello World" 到写一个完整的命令行记事本，15 课搞定 Rust。
 
 ## 这是什么？
